@@ -18,5 +18,5 @@ And(/^click on login$/) do
 end
 
 Then (/^login with sucess$/) do
-  #expect(page).to have_content ("Login efetuado com sucesso.")
+  page.has_content?('Welcome to the Team!')
 end

@@ -2,7 +2,7 @@
 # !/usr/bin/env ruby
 
 Given(/^User is on the home page$/) do
-  visit 'https://trello.com/kloeckner/boards'
+  page.has_content?('Boards')
 end
 
 When(/^click on Create a team$/) do
@@ -10,7 +10,7 @@ When(/^click on Create a team$/) do
 end
 
 And(/^enter the name$/) do
-  @newTeam.new_team_name.set("Test 2")
+  @newTeam.new_team_name.set('Create Team Test')
 end
 
 And(/^click on Create$/) do
@@ -18,6 +18,5 @@ And(/^click on Create$/) do
 end
 
 Then (/^the new team is created successfully$/) do
-  sleep(3)
-  page.has_content?('Test 2')
+  page.has_content?('Create Team Test')
 end

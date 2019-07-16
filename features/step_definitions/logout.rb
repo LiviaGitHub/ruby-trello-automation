@@ -2,7 +2,7 @@
 # !/usr/bin/env ruby
 
 Given(/^User is logged in$/) do
- visit 'https://trello.com/kloeckner/boards'
+  page.has_content?('Personal Boards')
 end
 
 When(/^click on user header$/) do
@@ -14,5 +14,5 @@ And (/^click on logout$/) do
 end
 
 Then(/^system returns to home page$/) do
-  expect(page).to have_content ("Thanks for using Trello.")
+  page.has_content?('Thanks for using Trello.')
 end
