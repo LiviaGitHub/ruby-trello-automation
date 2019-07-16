@@ -17,6 +17,6 @@ And(/^click on login$/) do
   @login.click_login.click
 end
 
-Then (/^login with sucess$/) do
+Then (/^login done successfully$/) do
   page.has_content?('Welcome to the Team!')
 end

@@ -5,5 +5,5 @@ Scenario: Create a new team
     Given User is on the home page
     When click on Create a team
     And enter the name
-    And click on Create
+    And click on Create button
     Then the new team is created successfully

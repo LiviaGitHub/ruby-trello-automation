@@ -6,4 +6,4 @@ Scenario: Access the system
     When enter the email
     And enter the password
     And click on login
-    Then login with sucess
+    Then login done successfully

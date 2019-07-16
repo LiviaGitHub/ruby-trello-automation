@@ -13,7 +13,7 @@ And(/^enter the name$/) do
   @newTeam.new_team_name.set('Create Team Test')
 end
 
-And(/^click on Create$/) do
+And(/^click on Create button$/) do
   @newTeam.click_create_team.click
 end
 
