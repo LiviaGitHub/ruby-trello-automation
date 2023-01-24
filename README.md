@@ -1,4 +1,4 @@
-# Challenge
+# Trello automation
 
 * Fork this repository
 * Install bundler - gem install bundler
